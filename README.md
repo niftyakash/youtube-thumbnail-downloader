@@ -3,8 +3,7 @@ download youtube thumbnail using URL
 
 Welcome to the youtube-thumbnail-downloader wiki!
 
-This was the 3rd website that I have worked on. A simple tool to download
-Youtube Thumbnail by the link of the video. 
+A simple tool to download Youtube Thumbnail by the link of the video. 
 
 Hosted it using Hostinger for a year. 
 
