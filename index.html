@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Thumbnail Downloader</title>
+  <meta name="Description"
+    content="Are you looking for the Best YouTube Thumbnail Downloader to grab video thumbnail fo free . Here is the free tool to save YouTube Thumbnail image.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="YouTube Thumbnail Downloader">
+  <meta property="og:site_name" content="YouTube Thumbnail Grabber">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    #parallax-effect {
+      background-image: url(4.png);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80%;
+    }
+
+    .shadow-box {
+      box-shadow: 0px 11px 20px 2px rgba(0, 0, 0, 0.75);
+    }
+
+    .content-img {
+      width: 50%;
+      height: 15%;
+      background-size: 100% 100%;
+      margin: 10px auto 10px auto;
+    }
+
+    #titleFont {
+      text-align: center;
+      font-family: 'Fascinate Inline', cursive;
+      color: revert;
+      font-size: 60px;
+    }
+
+    #content-title {
+      color: tomato;
+      font-weight: bolder;
+      border-bottom: 2px solid tomato;
+    }
+
+    h3 {
+      color: tomato
+    }
+
+    @media screen and (min-width: 601px) {
+      #titleFont {
+        font-size: 80px;
+      }
+    }
+
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+      #titleFont {
+        font-size: 35px;
+      }
+
+      #content-title {
+        font-size: 30px;
+        border-bottom: unset;
+      }
+
+      .content-img {
+        height: 200px;
+        width: 300px;
+      }
+    }
+
+    .bottom-menu {
+      background-color: white;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      text-align: center;
+    }
+
+    .list-inline {
+      box-sizing: border-box;
+      list-style: none;
+      margin-bottom: 0px;
+      margin-left: -5px;
+      margin-top: 0px;
+      padding-left: 0px;
+      padding-top: 6px;
+    }
+
+    #download-div {
+      display: none;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">YouTube Thumbnail Downloader</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" data-target="#about-page" data-toggle="modal" href="#about-page">About Page</a>
+        <a class="nav-item nav-link" data-target="#privacy-page" data-toggle="modal" href="#privacy-page">Privacy</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal" id="about-page">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">About Page</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>
+            <b>Welcome to <code>downloadvideothumbnail.com</code></b>, your number one source for extracting video
+            thumbnails.
+            <br><br>
+            We're dedicated to
+            giving you the very best of youtube thumbnail downloader, with a focus on
+            Build in 2020 by a team of lazy developers trying out some new things.<br><br>
+            We are offering you a great free tools which can make you get any video thumbnail you need.<br>
+            Feel free to tell us whether you like it or not.
+            Make sure to comment how you like the thumbnail finder tool.<br><br>
+            We hope you enjoy our tool as much as we enjoy offering it to you.<br><br> If you have any questions or
+            comments, please
+            don't hesitate to contact us at
+            <a href="mailto:contact@downloadvideothumbnail.com?subject = Feedback&body = Hello!">
+              contact@downloadvideothumbnail.com
+            </a><br><br>
+            Sincerely,<br><br>
+            company-Tools generator
+          </p>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="privacy-page">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Privacy Page</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <h3>
+            Privacy Policy for Tools generator
+          </h3>
+          <p>
+            At Download Video Thumbnail,<br> accessible from <a
+              href="www.downloadvideothumbnail.com">downloadvideothumbnail.com</a>, one of our main
+            priorities is
+            the privacy of our visitors. This Privacy Policy document contains types of information that is collected
+            and recorded by Download Video Thumbnail and how we use it.
+          </p>
+          <p>
+            If you have additional questions or require more information about our Privacy Policy, do not hesitate to
+            contact us.</p>
+          <p>
+            This Privacy Policy applies only to our online activities and is valid for visitors to our website with
+            regards to the information that they shared and/or collect in Download Video Thumbnail. This policy is not
+            applicable to any information collected offline or via channels other than this website.
+          </p>
+
+          <h3>
+            Consent
+          </h3>
+          <p>
+            By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+          </p>
+
+          <h3>Information we collect</h3>
+          <p>
+            The personal information that you are asked to provide, and the reasons why you are asked to provide it,
+            will be made clear to you at the point we ask you to provide your personal information.</p>
+          <p>
+            If you contact us directly, we may receive additional information about you such as your name, email
+            address, phone number, the contents of the message and/or attachments you may send us, and any other
+            information you may choose to provide.
+          </p>
+          <p>
+            When you register for an Account, we may ask for your contact information, including items such as name,
+            company name, address, email address, and telephone number.</p>
+          </p>
+
+          <h3>
+            How we use your information
+          </h3>
+          <p>
+            We use the information we collect in various ways, including to:
+          </p>
+          <ul>
+            <li>
+              Provide, operate, and maintain our website
+            </li>
+            <li>
+              Improve, personalize, and expand our website
+            </li>
+            <li>
+              Understand and analyze how you use our website
+            </li>
+            <li>
+              Develop new products, services, features, and functionality
+            </li>
+            <li>
+              Communicate with you, either directly or through one of our partners, including for customer service, to
+              provide you with updates and other information relating to the webste, and for marketing and promotional
+              purposes
+            </li>
+            <li>
+              Send you emails
+            </li>
+            <li>
+              Find and prevent fraud
+            </li>
+          </ul>
+          <h3>
+            Log Files
+          </h3>
+          <p>Download Video Thumbnail follows a standard procedure of using log files. These files log visitors when
+            they visit websites. All hosting companies do this and a part of hosting services' analytics. The
+            information collected by log files include internet protocol (IP) addresses, browser type, Internet
+            Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks.
+            These are not linked to any information that is personally identifiable. The purpose of the information is
+            for analyzing trends, administering the site, tracking users' movement on the website, and gathering
+            demographic information. Our Privacy Policy was created with the help of the <a
+              href="https://www.privacypolicygenerator.info/" target="_blank">Privacy Policy Generator</a> and the
+            <a href="https://www.privacypolicyonline.com/privacy-policy-generator" target="_blank">Online
+              Privacy Policy Generator</a>.
+          </p>
+          <h3>Cookies and Web Beacons</h3>
+          <p>Like any other website, Download Video Thumbnail uses 'cookies'. These cookies are used to store
+            information including visitors' preferences, and the pages on the website that the visitor accessed or
+            visited. The information is used to optimize the users' experience by customizing our web page content
+            based on visitors' browser type and/or other information.
+          </p>
+
+          <p>
+            For more general information on cookies, please read "<a
+              href="https://www.cookieconsent.com/what-are-cookies/" target="_blank">What Are Cookies</a>".
+          </p>
+
+
+          <h3>Google DoubleClick DART Cookie</h3>
+          <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to
+            serve
+            ads to our site visitors based upon their visit to www.website.com and other sites on the internet.
+            However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content
+            network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads"
+              target="_blank">https://policies.google.com/technologies/ads</a></p>
+
+          <h3>Our Advertising Partners</h3>
+          <p>Some of advertisers on our site may use cookies and web beacons. Our advertising partners are listed
+            below. Each of our advertising partners has their own Privacy Policy for their policies on user data.
+            For
+            easier access, we hyperlinked to their Privacy Policies below.</p>
+          <ul>
+            <li>Google</li><br>
+            <p><a href="https://policies.google.com/technologies/ads"
+                target="_href">https://policies.google.com/technologies/ads</a></p>
+          </ul>
+
+          <h3>Advertising Partners Privacy Policies</h3>
+          <p>You may consult this list to find the Privacy Policy for each of the advertising partners of Download
+            Video Thumbnail.</p>
+          <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are
+            used in their respective advertisements and links that appear on Download Video Thumbnail, which are sent
+            directly to users' browser. They automatically receive your IP address when this occurs. These
+            technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize
+            the advertising content that you see on websites that you visit.</p>
+          <p>Note that Download Video Thumbnail has no access to or control over these cookies that are used by
+            third-party advertisers.</p>
+
+          <h3>Third Party Privacy Policies</h3>
+          <p>Download Video Thumbnail's Privacy Policy does not apply to other advertisers or websites. Thus, we are
+            advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed
+            information. It may include their practices and instructions about how to opt-out of certain options.
+          </p>
+          <p>
+            You can choose to disable cookies through your individual browser options. To know more detailed
+            information about cookie management with specific web browsers, it can be found at the browsers'
+            respective websites.</p>
+
+          <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
+          <p>
+            Under the CCPA, among other rights, California consumers have the right to:
+          </p>
+          <p>
+            Request that a business that collects a consumer's personal data disclose the categories and specific
+            pieces
+            of personal data that a business has collected about consumers.
+          </p>
+          Request that a business delete any personal data about the consumer that a business has collected.
+          </p>
+          <p>
+            Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+          </p>
+          <p>
+            If you make a request, we have one month to respond to you. If you would like to exercise any of these
+            rights, please contact us.
+          </p>
+
+          <h3>GDPR Data Protection Rights</h3>
+
+          <p>
+            We would like to make sure you are fully aware of all of your data protection rights. Every user is
+            entitled
+            to the following:
+          </p>
+          <p>
+            The right to access – You have the right to request copies of your personal data. We may charge you a
+            small
+            fee for this service.
+          </p>
+          <p>
+            The right to rectification – You have the right to request that we correct any information you believe
+            is
+            inaccurate. You also have the right to request that we complete the information you believe is
+            incomplete.
+          </p>
+          <p>
+            The right to erasure – You have the right to request that we erase your personal data, under certain
+            conditions.
+          </p>
+          <p>
+            The right to restrict processing – You have the right to request that we restrict the processing of your
+            personal data, under certain conditions.
+          </p>
+          <p>
+            The right to object to processing – You have the right to object to our processing of your personal
+            data,
+            under certain conditions.
+          </p>
+          <p>
+            The right to data portability – You have the right to request that we transfer the data that we have
+            collected to another organization, or directly to you, under certain conditions.
+          </p>
+          <p>
+            If you make a request, we have one month to respond to you. If you would like to exercise any of these
+            rights, please contact us.
+          </p>
+
+
+          <h3>Children's Information</h3>
+          <p>Another part of our priority is adding protection for children while using the internet. We encourage
+            parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+          <p>
+            Download Video Thumbnail does not knowingly collect any Personal Identifiable Information from children
+            under the age of 13. If you think that your child provided this kind of information on our website, we
+            strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such
+            information from our records.</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+
+    <div>
+      <h1 id="titleFont" class="card-title"> VIDEO THUMBNAIL DOWNLOADER 🔥</h1>
+    </div>
+
+    <div id="parallax-effect">
+      <div class="container">
+        <br>
+        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+          <br>
+
+          <div>
+            <figure>
+              <img class="content-img mx-auto d-block" src="1.png" />
+            </figure>
+          </div>
+
+          <div class="row justify-content-md-center">
+            <div class="col-md-6 ">
+              <p class="text-center">PASTE YOUTUBE URL
+              </p>
+              <div class="text-center">
+                <input type="textfield" name="ytname" id="yt"
+                  style="width: 80%; height:40px;margin-bottom:2em;border:2px solid #ddd;background-color:#fafafa"
+                  onPaste="grabit();">
+                <button onclick="youtube_parser()" class="btn btn-md btn-danger">Confirm</button>
+              </div>
+
+            </div>
+            <div>
+              <p class="text-center text-muted"><b>1.</b> Copy YouTube URL sample:
+                https://www.youtube.com/watch?v=6i0I-WWpWdc
+              </p>
+              <p class="text-center text-muted"><b>2.</b> Paste the link in our Thumbnaiil Downloader and confirm
+              </p>
+              <p class="text-center text-muted"><b>3.</b> Download your Thumbnail HD-Quality
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <div class="container">
+
+      <div class="col-lg-12" id="download-div">
+        <div>
+          <figure id="b1-img">
+            <img name="b1" src="">
+          </figure>
+        </div>
+        <br>
+
+        <div>
+          <figure id="b2-img">
+            <img name="b2" src="">
+          </figure>
+        </div>
+        <br>
+
+        <div>
+          <figure id="b5-img">
+            <img name="b5" src="">
+          </figure>
+        </div>
+        <br>
+
+        <div>
+          <figure id="b6-img">
+            <img name="b6" src="">
+          </figure>
+        </div>
+        <br>
+
+        <div>
+          <figure id="b7-img">
+            <img name="b7" src="">
+          </figure>
+        </div>
+        <br>
+      </div>
+
+      <br>
+      <div class="row shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="row col-sm" style="align-content: center; text-align: center; justify-content: center;">
+          <h1 id="content-title">THUMBNAIL DOWNLOADER / GRABBER</h1>
+        </div>
+      </div>
+
+      <div>
+        <figure>
+          <img class="content-img mx-auto d-block" src="2.png" />
+        </figure>
+      </div>
+
+      <div class="shadow-sm p-3 mb-5 bg-white rounded">
+
+        <p><b>you must have a question:</b> How to grab or download a YouTube thumbnail preview image? Or how to
+          finder
+          video
+          thumbnail images? <br>
+          Our tool is the ultimate solution for every query related to extracting and viewing of video thumbnails.
+          <br>
+          Our tool is a free online media application which allows you to view and download any Youtube thumbnail
+          preview image.
+        </p>
+
+        <h3>YouTube Thumbnail Downloader</h3>
+        <p>The human body works with five senses mainly, and fortunately for those who can see, most of their
+          decisions
+          are made by looking at things visually.</p>
+        <p>
+          For instance, imagine you at a five-star restaurant, and the food served tastes out of the world, but
+          aesthetically, it looks like mush. Often, you wouldn’t even consider selecting or tasting something on the
+          base of its visual appearance.
+        </p>
+        <p>
+          Similarly, on YouTube, for a <b>Coldplay</b> song video, on the thumbnail, the scenery from the video is not
+          as
+          appealing as Chris Martin. Hence, <b>YouTube Thumbnail Downloader</b> changes the whole game of the content
+          clickbait.
+        </p>
+
+        <h3>What is Thumbnail?</h3>
+        <p>So, Thumbnail is a small imagery of the video, but the idea behind this little representation is to reduce
+          the transfer speed and download time. While focusing on video only, it is identification for video in a
+          smaller size.</p>
+
+        <h3>What is a YouTube Thumbnail Downloader or thumbnail grabber?</h3>
+        <p>It is a free web tool which you can use to grab or download any thumbnail of the any youtube video you
+          like,
+          you can save image of any YouTube video and turn it into a thumbnail for your own video before uploading.
+
+        <h3>Who can use this Thumbnail grabber?</h3>
+        <p>
+          Well, mostly bloggers, designers, web designers, HTML programmers, web hosting employees, software
+          developers
+          for coding, and other creative heads use it for creative purposes.</p>
+        <p>
+          Since it provides you the desired outcome, you can work as per your theme without any constraints.</p>
+        <p>
+          You can download any background of the youtube thumbnail video.
+        </p>
+
+        <h3>
+          How to get the YouTube Thumbnail online for free?
+        </h3>
+        <p>
+          For an average person with basic internet knowledge, this is an effortless procedure. All you need to do is
+          paste the YouTube link of the video in the box, and it will generate around three thumbnails for the video.
+        </p>
+
+        <p>
+          First, the thumbnail will be High-Quality YouTube Thumbnail; the second one will be HD Quality YouTube
+          Thumbnail, and thirdly, Low-Quality YouTube Thumbnail. On clicking the thumbnail you selected, you get the
+          link to download it, and then you can save the file.
+        </p>
+
+        <h3>
+          What formats and sizes it supports?
+        </h3>
+        <p>
+          Since things and technology evolve, some of the extremely primeval methods are not supported. For a quick
+          check, some file sizes and formats it supports are listed below.
+        </p>
+
+        <h3>Sizes</h3>
+        <p>
+        </p>
+        Ideally, it supports other sizes too, but some notable ones are: <br><br>
+
+
+        • Grab 4K youtube video thumbnails<br>
+        • YouTube downloading Full HD 1080<br>
+        • YouTube downloading HD 720<br>
+        • YouTube downloading SD<br><br>
+
+
+        <h5>
+          Formats
+        </h5>
+        <p>You will view the thumbnail of video in following formats:</p>
+
+        ‣ HD <br>
+        ‣ HQ <br>
+        ‣ 1080p <br>
+        ‣ 4K <br><br>
+
+
+        <h3>
+          Benefits of using YouTube Thumbnail finder
+        </h3>
+        <p>
+          ‣ These thumbnails are rightly selected, compressed, and skillfully altered images taken from the video.
+          <br>
+          ‣ They make it easy for files to download, as it has almost no size and footprint. <br>
+          ‣ Additionally, they are efficiently made by software that is intact with all the requirements and
+          prerequisites for an ideal thumbnail. <br>
+
+        </p>
+
+        <h3>How to copy the link of your YouTube Video?</h3>
+
+        <p>
+          Well, when you reach the page of your video, click right on your mouse, choose the copy link address option.
+          Now after copying it, you may go to the youtube thumbnail extractor software and paste the link in this
+          youtube thumbnail generator tool to generate free Thumbnail image .
+
+        </p>
+        <p>
+          After a few seconds, the software will generate four different sizes of thumbnail for your liking; now, you
+          can Save Thumbnail.
+
+        </p>
+
+        <h3>Safety of using youtube thumbnail extractor.</h3>
+        <p>Safety is our top priority, so is the entire data traffic of this website is SSL encrypted. With this
+          secure
+          network protocol, your data is protected from access by third parties. The download of the actual thumbnail
+          images running via an directly encrypted connection to the YouTube servers.</p>
+
+        <p>
+          If you like our tool, feel free to share it with others. 🎉
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    function youtube_parser() {
+      url = document.getElementById('yt').value;
+      var regex = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+      var match = url.match(regex);
+      if (match && match[7].length == 11) {
+        b1.src = 'https://img.youtube.com/vi/' + match[7] + '/0.jpg';
+        createDownloadButton(b1.src, "1");
+
+        b2.src = 'https://img.youtube.com/vi/' + match[7] + '/1.jpg';
+        createDownloadButton(b2.src, "2");
+
+        b5.src = 'https://img.youtube.com/vi/' + match[7] + '/hqdefault.jpg';
+        createDownloadButton(b5.src, "5");
+
+        b6.src = 'https://img.youtube.com/vi/' + match[7] + '/mqdefault.jpg';
+        createDownloadButton(b6.src, "6");
+
+        b7.src = 'https://img.youtube.com/vi/' + match[7] + '/maxresdefault.jpg';
+        createDownloadButton(b7.src, "7");
+
+      }
+    }
+
+    function blurit() {
+      document.getElementById('yt').blur();
+    }
+    function grabit() {
+      setTimeout("blurit()", 1000);
+    }
+
+    function createDownloadButton(src, index) {
+      var btn = document.createElement('a');
+      btn.id = "btn-download";
+      btn.className = "btn btn-danger btn-md"
+      btn.style.color = "white";
+      btn.innerHTML = "Download";
+      btn.setAttribute('download', "thumbnail.jpg");
+      btn.setAttribute('href', src);
+
+      document.getElementById("b" + index + "-img").appendChild(btn);
+      document.getElementById("download-div").style.display = "inherit";
+    }
+  </script>
+
+
+</body>
+
+</html>
