@@ -28,8 +28,8 @@ Also did the website SEO using the Semrush tool to find keywords and make backli
 <h1> ACHIEVEMENTS </h1>
 
 
-Total user: more than 1.7K
-total views: more than 2.1K
+<h2>Total user: more than 1.7K</h2>
+<h2>total views: more than 2.1K</h2>
 
 Official Google Analytics data
 
