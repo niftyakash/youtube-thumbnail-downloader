@@ -25,6 +25,9 @@ Also did the website SEO using the Semrush tool to find keywords and make backli
  
 ![image](https://user-images.githubusercontent.com/43758066/183385087-3dad5e6f-2c35-432b-952a-84f260a7fdb2.png)
 
+<h1> ACHIEVEMENTS </h1>
+
+
 Total user: more than 1.7K
 total views: more than 2.1K
 
