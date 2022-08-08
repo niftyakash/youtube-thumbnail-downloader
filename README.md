@@ -7,6 +7,8 @@ A simple tool to download Youtube Thumbnail by the link of the video.
 
 Hosted it using Hostinger for a year. 
 
+Website link: www.downloadvideothumbnail.com (edit: No longer hosting the website so it might not be available)
+
 A glimpse of the website!!!
 
 ![image](https://user-images.githubusercontent.com/43758066/183384364-9606fe2d-384e-44a0-8972-54954dcf18a5.png)
